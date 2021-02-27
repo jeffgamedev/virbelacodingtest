@@ -54,9 +54,9 @@ Allow the designer to choose the base color and highlight color for Items/Bots a
 ## Questions ##
 
  1. How can your implementation be optimized?
- 1. How much time did you spend on your implementation?
- 1. What was most challenging for you?
- 1. What else would you add to this exercise?
+ 2. How much time did you spend on your implementation?
+ 3. What was most challenging for you?
+ 4. What else would you add to this exercise?
 
 ## Optional ##
 
@@ -76,3 +76,16 @@ Allow the designer to choose the base color and highlight color for Items/Bots a
 ## If you have questions ##
 
 * Reach out to your Virbela contact (Recruiter or Hiring Manager)
+
+
+## Answered Questions ##
+
+1. In the current implementation, all objects are being checked for distance. This may be overwhelming if too many objects exist.
+    A physics check (I was thinking Physics.OverlaySphere should do fine) may be utilized to take advantage of detecting only the closest objects and checking only those. I did setup LayerMasks for this case but did not end up implementing it.
+
+2. For the core functionality described in the readme, it took me just over an hour. Then I decided to have a lot of fun, and make this
+    a playground. I spent about 2.5 hours adding all the fun stuff such as running around, music, sound effects, models, animations, and spawning objects.
+
+3. Honestly, getting the IDE to intellisense (using VS-Code) on my workstation. However after just getting the latest Unty version it worked fine.
+
+4. Getting the object highlighting to work while in edit-mode (using [ExecuteInEditMode] on top of the class). I actually thought this was a requirement for some time until re-reading the requirements, and this added a fair amount of difficulty! The "Ensure that when Player is moved around in the scene manually..." is what made me think this was a requirement at first. I did get it working, but it was a little messy and I chose to remove it.

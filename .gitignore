@@ -26,6 +26,10 @@ dist/
 # JetBrains IDE
 .idea/
 
+# VSCode IDE
+.vscode
+.vs/
+
 # Unit test reports
 TEST*.xml
 
@@ -48,3 +52,30 @@ Thumbs.db
 *.mov
 *.wmv
 
+# Unity files
+*/*/Library/
+*/*/[Ll]ibrary/
+*/*/[Tt]emp/
+*/*/[Oo]bj/
+*/*/[Bb]uild/
+*/*/[Bb]uilds/
+*/*/[Ll]ogs/
+*/*/[Uu]ser[Ss]ettings/
+
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
